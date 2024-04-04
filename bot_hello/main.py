@@ -1,6 +1,16 @@
 import discord
+import dotenv
+import os
+import redis
 
 TOKEN = '.'
+
+dotenv.load_dotenv()
+
+host = os.getenv('REDIS_HOST')
+port = os.getenv('REDIS_PORT')
+
+r = redis.Redis(host=host, port=port)
 
 client = discord.Client()
 
