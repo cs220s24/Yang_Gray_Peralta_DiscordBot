@@ -2,9 +2,9 @@
 
 ## Contributors
 
-Fernando Peralta Castro - peraltaf2
-Brandon Yang - clouduki
-Trevor Gray - trevor-gray17
+- Fernando Peralta Castro - peraltaf2
+- Brandon Yang - clouduki
+- Trevor Gray - trevor-gray17
 
 ## Purpose
 
