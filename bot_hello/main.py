@@ -3,6 +3,7 @@ import dotenv
 import os
 import redis
 
+from discord.ext import commands
 TOKEN = '.'
 
 dotenv.load_dotenv()
