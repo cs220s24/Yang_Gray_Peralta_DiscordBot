@@ -4,7 +4,6 @@ import os
 import redis
 
 from discord.ext import commands
-TOKEN = '.'
 
 dotenv.load_dotenv()
 
@@ -27,4 +26,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-client.run(TOKEN)
+client.run(os.getenv('TOKEN'))
