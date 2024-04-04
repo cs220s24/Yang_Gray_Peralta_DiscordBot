@@ -1,5 +1,11 @@
 # Discord Bot Project
 
+## Contributors
+
+- Fernando Peralta Castro - peraltaf2
+- Brandon Yang - clouduki
+- Trevor Gray - trevor-gray17
+
 ## Purpose
 
 The goal of this project is to demonstrate how to set up a simple Discord bot with varying components:
