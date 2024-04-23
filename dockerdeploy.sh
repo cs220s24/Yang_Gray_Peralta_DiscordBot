@@ -28,8 +28,5 @@ sudo chmod +x /usr/local/bin/docker-compose
 # Navigate to the directory containing your Docker Compose file
 cd /home/ec2-user/app
 
-# Run the Docker container with the .env file
-docker run -d --name gpt-bot -v $(pwd)/.env:/app/.env gpt-bot
-
 # Build and start the Docker containers
 sudo docker-compose up --build -d
