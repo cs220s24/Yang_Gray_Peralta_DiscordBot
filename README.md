@@ -1,30 +1,31 @@
 # Discord Chat GPT Bot
 
-# Setup
-
 The following sections describe how to setup the system so it will
 run *locally* (i.e. on your laptop).  For deployment on an EC2 
-instance, see the sections in the [AWS section](#AWS) section.
+instance, see the sections in the [Running with Docker in EC2 Instance](#running-with-docker-in-ec2-instance)
 
 ## Running Bot Locally
 
-* Create a virtual environment for the collector and install the required libraries:
+To run this application on your local device, follow the steps below:
 
-# Start Redis as a background process
-redis-server --daemonize yes
+Ensure you have the necessary dependencies installed. This will vary based on the programming language and libraries used in the project.
 
-# Create a trap to shut down Redis when the script exits
-trap "redis-cli shutdown" EXIT
+### Clone the repository to your local machine using the following command in your terminal:
 
-# Create Python virtual environment and install requirements
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+```
+git clone <repository_url>
+```
 
-# Start the bot
-python bot.py
+>
+### Navigate into the project directory:
+>
+ ```
+cd <project_directory>
+  ```
 
-* Create a file `.env` that contains the hostname and port number for Redis.  We will run Redis on our laptop (`localhost`) using the standard Redis port (6379).  Replace `<API_KEY>` with your WeatherAPI key:
+### Create .env file
+
+Create a file `.env` that contains the hostname and port number for Redis.  We will run Redis on our laptop (`localhost`) using the standard Redis port (6379).  Replace `<Discord_Token>` with your Discord Token and `<OPENAI_KEY>` with your OPENAI key:
 
   ```
     DISCORD_TOKEN = '<Discord_Token>'
@@ -33,26 +34,42 @@ python bot.py
     REDIS_PORT=6379
   ```
 
-  Deploy SH script for local running
+### Run the localdeploy.sh script:
 
-  #!/bin/bash
+Do 'bash localdeploy.sh'. This script should handle the setup, create a virtual environment, install dependencies, run redis as a background process, and start the bot application.
 
-# Check for .env file
-if [ ! -f .env ]; then
-    echo "Create .env before deploying"
-    exit
-fi
 
-# Start Redis as a background process
-redis-server --daemonize yes
+## Running with Docker in EC2 Instance
 
-# Create a trap to shut down Redis when the script exits
-trap "redis-cli shutdown" EXIT
+To run this application using Docker, follow the steps below:
 
-# Create Python virtual environment and install requirements
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+### ssh into your EC2 instance
 
-# Start the bot
-python bot.py
+ssh -i ~/.ssh/labsuser.pem ec2-user@ip-address
+
+### Use the scp command to copy your local files up to your EC2 instance
+
+```
+scp -i /path/to/your/key.pem /path/to/local/file.txt ec2-user@your-ec2-ip-address:/path/to/remote/directory
+```
+
+### Navigate into the project directory:
+>
+ ```
+cd <project_directory>
+  ```
+
+#### Create .env file
+
+Create a file `.env` that contains the hostname and port number for Redis.  We will run Redis on our laptop (`localhost`) using the standard Redis port (6379).  Replace `<Discord_Token>` with your Discord Token and `<OPENAI_KEY>` with your OPENAI key:
+
+  ```
+    DISCORD_TOKEN = '<Discord_Token>'
+    OPENAI_KEY = "<OPENAI_KEY?"
+    REDIS_HOST=localhost
+    REDIS_PORT=6379
+  ```
+
+### Run the dockerdeploy.sh script:
+
+Do 'bash dockerdeploy.sh'. This script should handle the setup, install docker on the EC2 instance, install dependencies, run redis as a background process, run docker as a system process and compose bot application
