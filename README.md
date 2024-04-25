@@ -1,5 +1,9 @@
 # Discord Chat GPT Bot
 
+# System Architecture
+![CS220 Project UML](https://github.com/cs220s24/Yang_Gray_Peralta_DiscordBot/assets/143422058/9eecad69-247e-4b8a-ac47-7f7f4797f211)
+
+
 The following sections describe how to setup the system so it will
 run *locally* (i.e. on your laptop).  For deployment on an EC2 
 instance, see the sections in the [Running with Docker in EC2 Instance](#running-with-docker-in-ec2-instance)
