@@ -1,8 +1,6 @@
 Apache Notice
 Copyright 2024 Fernando Peralta Castro
 
-Notice (Last Updated: April 29, 2024)
-
 # Notice (Last Updated: April 29, 2024)
 
 This product includes software developed by the following organizations:
