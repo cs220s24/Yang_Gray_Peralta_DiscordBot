@@ -54,7 +54,7 @@ To run this application using Docker, follow the steps below:
 
 ssh -i ~/.ssh/labsuser.pem ec2-user@ip-address
 
-### Use the scp command to copy your local files up to your EC2 instance
+### Use the scp command to from a separate terminal (NOT THE ONE THAT YOU SSH'D INTO) to copy your local files up to your EC2 instance
 
 ```
 scp -i /path/to/your/key.pem /path/to/local/file.txt ec2-user@your-ec2-ip-address:/path/to/remote/directory
@@ -64,17 +64,6 @@ scp -i /path/to/your/key.pem /path/to/local/file.txt ec2-user@your-ec2-ip-addres
 >
  ```
 cd <project_directory>
-  ```
-
-#### Create .env file
-
-Create a file `.env` that contains the hostname and port number for Redis.  We will run Redis on our laptop (`localhost`) using the standard Redis port (6379).  Replace `<Discord_Token>` with your Discord Token and `<OPENAI_KEY>` with your OPENAI key:
-
-  ```
-    DISCORD_TOKEN = '<Discord_Token>'
-    OPENAI_KEY = "<OPENAI_KEY?"
-    REDIS_HOST=localhost
-    REDIS_PORT=6379
   ```
 
 ### Run the dockerdeploy.sh script:
