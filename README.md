@@ -1,3 +1,6 @@
+## Original Repository
+This repository is a fork/clone of the [discord-gpt3-chatbot](https://github.com/Jman4190/discord-gpt3-chatbot) by [Jman4190], which was originally licensed under the Apache License 2.0.
+
 # Discord Chat GPT Bot
 
 # System Architecture
