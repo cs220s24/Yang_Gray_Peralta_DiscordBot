@@ -1,22 +1,22 @@
 Apache Notice
 Copyright 2024 Fernando Peralta Castro
 
-# Notice (Last Updated: April 29, 2024)
+Notice (Last Updated: April 29, 2024)
 
 This product includes software developed by the following organizations:
 
-- **Discord.py**: A library for interacting with the Discord API. Licensed under the [MIT License](https://opensource.org/licenses/MIT).
+The Discord.py library, which interacts with the Discord API, is licensed under the MIT License (https://opensource.org/licenses/MIT).
 
-- **OpenAI Python library**: A library for interacting with the OpenAI API. Licensed under the [MIT License](https://github.com/openai/openai-python/blob/main/LICENSE).
+The OpenAI Python library, used to interact with the OpenAI API, does not have a clear license associated with it. Please refer to the OpenAI documentation for licensing information.
 
-- **Redis Python library**: A library for interacting with Redis. Licensed under the [MIT License](https://github.com/redis/redis-py/blob/master/LICENSE).
+The Redis Python library, which interacts with Redis, is typically licensed under the BSD 3-Clause "New" or "Revised" License (https://opensource.org/licenses/BSD-3-Clause).
 
-- **Python standard library**: The standard library for Python, including modules such as datetime, threading, and sys. Licensed under the [Python Software Foundation License](https://docs.python.org/3/license.html).
+The Python standard library, including modules such as datetime, threading, and sys, is licensed under the Python Software Foundation License (https://docs.python.org/3/license.html).
 
-- **dotenv library**: A library for loading environment variables from a .env file. Licensed under the [BSD 3-Clause "New" or "Revised" License](https://github.com/theskumar/python-dotenv/blob/master/LICENSE).
+The dotenv library, which loads environment variables from a .env file, is licensed under the MIT License (https://opensource.org/licenses/MIT).
 
-- **keep_alive module**: A custom software module used for keeping the bot alive. Please refer to the license provided with the keep_alive module.
+The keep_alive module, used for keeping the bot alive, is custom software with its own licensing terms. Please refer to the license provided with the keep_alive module.
 
 Additionally, this product may include other software components not explicitly mentioned here. Please review the licenses of all included software components for compliance with their respective terms and conditions.
 
-If you have any questions or concerns regarding the licensing of the included software components, please contact us at [support@example.com](mailto:support@example.com).
+If you have any questions or concerns regarding the licensing of the included software components, please contact us at peraltaf@moravian.edu
