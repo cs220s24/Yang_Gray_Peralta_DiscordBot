@@ -22,7 +22,6 @@ import sys
 
 from datetime import datetime
 from threading import Thread
-from keep_alive import keep_alive
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -75,9 +74,6 @@ async def on_message(message):
         await message.channel.send(response['choices'][0]['message']['content'])
 
 try:
-    # Start the Flask server in a separate thread
-    Thread(target=keep_alive).start()
-
     # Start the bot
     client.run(TOKEN)
 except KeyboardInterrupt:
