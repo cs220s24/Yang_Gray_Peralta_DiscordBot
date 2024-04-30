@@ -12,6 +12,9 @@ This repository is a fork/clone of the [discord-gpt3-chatbot](https://github.com
 During Moravian's CS220A (DevOps) course, we collaborated on creating a Discord bot, harnessing the Discord and OpenAI APIs. This integration allows the Discord bot to engage users in natural language conversations, mimicking the conversational style and intelligence of ChatGPT 3.5. Our deployment strategy involved containerizing the bot on a Linux EC2 instance and implementing Redis databse for efficient storage of user input data.
 
 
+https://github.com/cs220s24/Yang_Gray_Peralta_DiscordBot/assets/157046207/452969eb-e127-44e2-b9ce-5c37fbb81ebf
+
+
 # System Architecture
 ![CS220 Project UML](https://github.com/cs220s24/Yang_Gray_Peralta_DiscordBot/assets/143422058/9eecad69-247e-4b8a-ac47-7f7f4797f211)
 
