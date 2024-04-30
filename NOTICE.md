@@ -1,5 +1,5 @@
 Apache Notice
-Copyright 2024 Fernando Peralta Castro
+Copyright 2024
 
 # Notice (Last Updated: April 29, 2024)
 
